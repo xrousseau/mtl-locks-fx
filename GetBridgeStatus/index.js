@@ -36,7 +36,7 @@ module.exports = async function (context, req) {
 const getLastestStatus = async (partitionKey) => {
     const account = process.env.AZURE_STORAGE_ACCOUNT_NAME;
     const accountKey = process.env.AZURE_STORAGE_ACCOUNT_KEY;
-    const tableName = "events";
+    const tableName = process.env.AZURE_STORAGE_TABLE_NAME;
 
     const credential = new AzureNamedKeyCredential(account, accountKey);
     const client = new TableClient(`https://${account}.table.core.windows.net`, tableName, credential);
