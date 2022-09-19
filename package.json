@@ -10,9 +10,6 @@
     "@azure/data-tables": "^13.2.0",
     "axios": "^0.27.2",
     "cheerio": "^1.0.0-rc.12",
-    "dotenv": "^16.0.2",
-    "pretty": "^2.0.0",
-    "timezone": "^1.0.23",
-    "uuid": "^9.0.0"
+    "dotenv": "^16.0.2"
   }
 }
